@@ -1,0 +1,24 @@
+{
+  "name": "node-template",
+  "version": "1.0.0",
+  "description": "node库项目模版",
+  "scripts": {
+    "build": "rm -rf es/* cjs/* && node esbuild.bundle.mjs && tsc",
+    "lint": "eslint --quiet ."
+  },
+  "exports": {
+    ".": {
+      "import": "./es/index.js",
+      "default": "./cjs/index.js",
+      "types": "./es/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@cc/esbuild-bundle": "workspace:*",
+    "@cc/watch-packages": "workspace:*",
+    "@types/node": "^20.10.5"
+  },
+  "keywords": [],
+  "author": "caifeng01",
+  "license": "ISC"
+}

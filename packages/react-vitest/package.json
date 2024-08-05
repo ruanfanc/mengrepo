@@ -1,0 +1,33 @@
+{
+  "name": "rsbuild-react-ts-vitest",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open & watch-libs",
+    "build": "rsbuild build",
+    "preview": "rsbuild build && rsbuild preview",
+    "test:dev": "vitest",
+    "test": "vitest run",
+    "lint": "eslint --quiet ."
+  },
+  "dependencies": {
+    "@cc/react-components": "workspace:*",
+    "@cc/watch-packages": "workspace:*",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.2.5",
+    "@rsbuild/plugin-react": "^0.2.5",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5.3.0",
+    "@testing-library/jest-dom": "^6.1.6",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/lodash-es": "^4.17.12",
+    "jsdom": "^23.0.1"
+  }
+}

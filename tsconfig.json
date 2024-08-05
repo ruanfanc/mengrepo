@@ -1,12 +1,24 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "lib": ["esnext"],
-    "allowJs": false,
+    "lib": ["esnext", "DOM"],
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Bundler",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "noImplicitAny": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "strict": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
   },
-  "include": ["packages/*/src", ".eslintrc.js"]
+  "include": [
+    "packages/**/*",
+    "libs/**/*",
+    "**/.eslintrc.cjs",
+    "commitlint.config.cjs"
+  ],
+  "exclude": ["node_modules"]
 }

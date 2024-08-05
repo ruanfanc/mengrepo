@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "es",
+    "moduleResolution": "Bundler",
+    "emitDeclarationOnly": false
+  },
+  "include": ["src/**/*"]
+}
